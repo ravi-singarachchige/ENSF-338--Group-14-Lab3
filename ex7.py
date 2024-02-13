@@ -45,9 +45,23 @@ for task in tasks:
 
 print(best_midpoints)
 
-#Question 4
+#Question 3
 plt.scatter(tasks, best_midpoints)
 plt.xlabel('Tasks')
 plt.ylabel('Best Midpoints')
 plt.savefig('ex7_plot.png')
 plt.show()
+
+#Question 4
+
+#Question 4
+
+#most of the time best midpoint is 0 and couple of time it's 1000.
+
+#If the best midpoint is frequently at the extremes (0 or 1000), it suggests that the target values we're searching for are often located near the beginning or the end of your data array.
+
+#The choice of initial midpoint does affect the performance of a binary search. Binary search works by repeatedly dividing the search space in half. 
+
+#If the target value is near the beginning of the array, an initial midpoint of 0 would be more efficient because it reduces the search space more quickly. 
+
+#Similarly, if the target value is near the end of the array, an initial midpoint of 1000 would be more efficient.
